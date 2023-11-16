@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events Design</title>
+  <!-- Enlaza el archivo de estilo de Tailwind CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body>
+
+  <!-- Contenedor para mostrar los eventos -->
+  <div id="events-container" class="m-4 p-4 border border-gray-300 rounded-md">
+    <!-- Los eventos se mostrarán aquí -->
+  </div>
+
+<!-- Agrega la etiqueta script que carga la biblioteca gapi -->
+<script src="https://apis.google.com/js/api.js"></script>
+
+<!-- Agrega la etiqueta script que carga las credenciales como JSON -->
+<script id="credentials" type="application/json">
+{
+  "installed": {
+    "client_id": "214278282169-1kav589ffe2qmn9l3jo6ulshg5blfm6g.apps.googleusercontent.com",
+    "project_id": "intershipv1",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://accounts.google.com/o/oauth2/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "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",
+    "redirect_uris": ["http://127.0.0.1:5500/index.html"],
+    "javascript_origins": ["http://127.0.0.1:5500"]
+  }
+}
+</script>
+
+<!-- Enlaza tu archivo JavaScript -->
+<script src="main.js"></script>
+
+    
+</body>
+</html>
